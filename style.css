@@ -468,6 +468,7 @@ nav button:hover{
 
     .menu-icon{
     display: block;
+    align-self: flex-end;
     
     }
 
@@ -526,3 +527,4 @@ nav button:hover{
 .dark .menu-icon{
     color: white;
 }
+
