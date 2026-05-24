@@ -188,3 +188,8 @@ function showToast(){
     }, 2000);
 
 }
+
+function toggleMenu(){
+    document.querySelector(".nav-links")
+    .classList.toggle("show");
+}
