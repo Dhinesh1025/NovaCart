@@ -455,27 +455,21 @@ nav button:hover{
     .checkout-container{
         padding: 20px;
     }
-}
 
-.menu-icon{
-    display: none;
-    font-size: 30px;
-    color: black;
-    cursor: pointer;
-}
-
-.dark .menu-icon{
-    color: white;
-}
-
-@media (max-width: 768px){
 
     .menu-icon{
-    display: block;
-    align-self: flex-end;
-    
+        display: none;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
     }
 
+    .dark .menu-icon{
+        color: white;
+    }
+}
+
+@media(max-width:768px){
     nav{
         flex-direction: column;
         gap: 15px;
