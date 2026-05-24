@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <div class="nav-right">
+            <input type="text" placeholder="Search Products" id="search" onkeyup="searchProduct()">
+            <div class="categories">
+                <button onclick="filterProducts('all')">All</button>
+                <button onclick="filterProducts('mobile')">Mobiles</button>
+                <button onclick="filterProducts('gaming')">Gaming</button>
+                <button onclick="filterProducts('accessories')">Accessories</button>
+            </div>
+            <button onclick="darkMode()">🌙</button>
+       
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+    </nav>
+  
+
+    <div class="slider">
+        <div class="slides">
+            <img src="images/banner1.png">
+            <img src="images/banner2.png">
+            <img src="images/banner3.png">
+            <img src="images/banner1.png">
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="product" data-category="mobile">
+            <img src="images/mobile.webp" onclick="openPopup('images/mobile.webp','Samsung S26 Ultra','12GB RAM | 256GB Storage',20000)">
+            <h2>Mobile</h2>
+            <p>₹20000</p>
+            <button onclick="addToCart('Mobile',20000,'images/mobile.webp')">Add To Cart</button>
+        </div>
+        <div class="product" data-category="accessories">
+            <img src="images/Samsung_Headphone.png" onclick="openPopup('images/Samsung_Headphone.png','Samsung Headphones','Noise Cancellation',1500)">
+            <h2>Headphones</h2>
+            <p>₹1500</p>
+            <button onclick="addToCart('Headphones',1500,'images/Samsung_Headphone.png')">Add To Cart</button>
+        </div>
+        <div class="product" data-category="laptop">
+            <img src="images/laptop.avif" onclick="openPopup('images/laptop.avif','Gaming Laptop','16GB RAM | RTX Graphics',55000)">
+            <h2>Laptop</h2>
+            <p>₹55000</p>
+            <button onclick="addToCart('Laptop',55000,'images/laptop.avif')">Add To Cart</button>
+        </div>
+        <div class="product" data-category="accessories">
+            <img src="images/smart_watch.webp" onclick="openPopup('images/smart_watch.webp','Smart Watch','Fitness Tracking',3000)">
+            <h2>Smart Watch</h2>
+            <p>₹3000</p>
+            <button onclick="addToCart('Smart Watch',3000,'images/smart_watch.webp')">Add To Cart</button>
+        </div>
+        <div class="product" data-category="gaming">
+            <img src="images/gaming_mouse.jpg" onclick="openPopup('images/gaming_mouse.jpg','Gaming Mouse','RGB Gaming Mouse',1200)">
+            <h2>Gaming Mouse</h2>
+            <p>₹1200</p>
+            <button onclick="addToCart('Gaming Mouse',1200,'images/gaming_mouse.jpg')">Add To Cart</button>
+        </div>
+        <div class="product" data-category="accessories">
+            <img src="images/keyboard.webp" onclick="openPopup('images/keyboard.webp','Mechanical Keyboard','RGB Keyboard',2500)">
+            <h2>Keyboard</h2>
+            <p>₹2500</p>
+            <button onclick="addToCart('Keyboard',2500,'images/keyboard.webp')">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">✖</span>
+            <img id="popup-img">
+            <h2 id="popup-title"></h2>
+            <p id="popup-desc"></p>
+            <h3 id="popup-price"></h3>
+            <button id="popup-cart-btn">Add To Cart</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="NovaCart">
+                <h2>NovaCart</h2>
+                <p>Shop More, Save More 🔥</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">Mobiles</a>
+                <a href="#">Accessories</a>
+                <a href="#">Cart</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email : novacart@gmail.com</p>
+                <p>Phone : +91 9876543210</p>
+                <p>India 🇮🇳</p>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2026 NovaCart | All Rights Reserved</p>
+    </footer>
+
+    <div id="toast">✅ Added To Cart</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
