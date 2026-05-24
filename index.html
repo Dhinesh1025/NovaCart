@@ -10,24 +10,24 @@
 
 <body>
 
-    <nav>
-        <img src="images/logo.png" class="logo">
-        <span class="menu-icon" onclick="toggleMenu()">☰</span>
-        <div class="nav-right">
-            <input type="text" placeholder="Search Products" id="search" onkeyup="searchProduct()">
-            <div class="categories">
-                <button onclick="filterProducts('all')">All</button>
-                <button onclick="filterProducts('mobile')">Mobiles</button>
-                <button onclick="filterProducts('gaming')">Gaming</button>
-                <button onclick="filterProducts('accessories')">Accessories</button>
-            </div>
-            <button onclick="darkMode()">🌙</button>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
-            </div>
+<nav>
+    <img src="images/logo.png" class="logo">
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    <div class="nav-right">
+        <input type="text" placeholder="Search Products" id="search" onkeyup="searchProduct()">
+        <div class="categories">
+            <button onclick="filterProducts('all')">All</button>
+            <button onclick="filterProducts('mobile')">Mobiles</button>
+            <button onclick="filterProducts('gaming')">Gaming</button>
+            <button onclick="filterProducts('accessories')">Accessories</button>
         </div>
-    </nav>
+        <button onclick="darkMode()">🌙</button>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </div>
+</nav>
   
 
     <div class="slider">
