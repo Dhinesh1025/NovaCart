@@ -460,13 +460,6 @@ nav button:hover{
 .menu-icon{
     display: none;
     font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
-
-.menu-icon{
-    display: none;
-    font-size: 30px;
     color: black;
     cursor: pointer;
 }
