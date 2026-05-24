@@ -190,6 +190,6 @@ function showToast(){
 }
 
 function toggleMenu(){
-    document.querySelector(".nav-right")
+    document.querySelector(".nav-links")
     .classList.toggle("show");
 }

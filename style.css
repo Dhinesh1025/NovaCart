@@ -430,7 +430,6 @@ nav button:hover{
 
 @media(max-width: 768px){
     nav{
-        flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
         padding: 15px;
@@ -439,27 +438,17 @@ nav button:hover{
         display: block;
     }
     .nav-right{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
         display: none;
     }
-    .nav-right.show{
-        display: flex;
-    }
     .nav-links{
-        display: flex;
+        display: none;
         flex-direction: column;
         gap: 10px;
         align-items: center;
+        width: 100%;
     }
-    nav input{
-        width: 90%;
-    }
-    .categories{
-        flex-wrap: wrap;
-        justify-content: center;
+    .nav-links.show{
+        display: flex;
     }
     .slider{
         height: auto;
