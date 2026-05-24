@@ -78,17 +78,20 @@ nav button:hover{
     color: white;
 }
 
+.menu-icon{
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
 .slider{
-    width: calc(100% -30px);
+    width: calc(100% - 30px);
     height: 400px;
     overflow: hidden;
     position: relative;
     z-index: 0;
-
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-
+    margin: 15px auto;
     border-radius: 20px;
 }
 
@@ -427,21 +430,42 @@ nav button:hover{
 
 @media(max-width: 768px){
     nav{
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px;
     }
-    .nav-right,
-    .nav-links{
+    .menu-icon{
+        display: block;
+    }
+    .nav-right{
+        width: 100%;
         flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        display: none;
+    }
+    .nav-right.show{
+        display: flex;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
     nav input{
-        width: 200px;
+        width: 90%;
+    }
+    .categories{
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .slider{
-        height: 250px;
+        height: auto;
     }
     .slides img{
-        height: 250px;
+        height: auto;
     }
     .product,
     .cart-card,
@@ -455,67 +479,4 @@ nav button:hover{
     .checkout-container{
         padding: 20px;
     }
-
-
-    .menu-icon{
-        display: none;
-        font-size: 30px;
-        color: black;
-        cursor: pointer;
-    }
-
-    .dark .menu-icon{
-        color: white;
-    }
 }
-
-@media(max-width:768px){
-    nav{
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-    }
-
-    .nav-right{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-
-    #search{
-        width: 90%;
-    }
-
-    .categories{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .nav-links{
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    }
-
-    .nav-links.show{
-    display: flex;
-    }
-
-    .slider{
-        height: auto;
-    }
-
-    .slides img{
-        height: auto;
-    }
-}
-
-
-
-
-

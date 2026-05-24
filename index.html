@@ -12,6 +12,7 @@
 
     <nav>
         <img src="images/logo.png" class="logo">
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
         <div class="nav-right">
             <input type="text" placeholder="Search Products" id="search" onkeyup="searchProduct()">
             <div class="categories">
@@ -21,17 +22,12 @@
                 <button onclick="filterProducts('accessories')">Accessories</button>
             </div>
             <button onclick="darkMode()">🌙</button>
-
-            <div class="menu-icon" onclick="toggleMenu()">
-                ☰
-            </div>
-       
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
             </div>
         </div>
-
     </nav>
   
 
