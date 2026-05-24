@@ -464,6 +464,17 @@ nav button:hover{
     cursor: pointer;
 }
 
+.menu-icon{
+    display: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.dark .menu-icon{
+    color: white;
+}
+
 @media (max-width: 768px){
 
     .menu-icon{
@@ -517,14 +528,7 @@ nav button:hover{
     }
 }
 
-.menu-icon{
-    display: none;
-    font-size: 30px;
-    color: black;
-    cursor: pointer;
-}
 
-.dark .menu-icon{
-    color: white;
-}
+
+
 
